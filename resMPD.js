@@ -8,6 +8,9 @@ var mail;
 
 function reset(){
 
+    var img = document.getElementById("sending");
+    img.setAttribute("src", "images/img/mail-download.gif");
+
     int = getRandomInt(100000);
     mail = document.getElementById('mail').value;
 
@@ -25,6 +28,8 @@ function reset(){
     .then(function(response) {
 
        console.log('SUCCESS!', response.status, response.text);
+
+       img.setAttribute("src", "images/img/EvenWaryFrog-size_restricted.gif");
 
        const xmlhttp = new XMLHttpRequest();
        xmlhttp.open("POST", "getcustomer.php");

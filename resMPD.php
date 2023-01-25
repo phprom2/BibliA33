@@ -16,6 +16,7 @@ get_header();
 <link href="css.css" rel="stylesheet">
      <p>
          <label for="login"></label><input id="mail" type="mail" name="login" value="" placeholder="E-mail"/> <br/>
+         <img src="" id="sending">
          <button onclick="reset()">Réinitialiser</button>
          <br>
          <div id="verif">
